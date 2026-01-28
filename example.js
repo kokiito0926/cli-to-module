@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import { fs, path } from "zx";
 import { ctm } from "./index.js";
 
 // const result = await ctm("zx/cli", []);

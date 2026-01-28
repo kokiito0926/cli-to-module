@@ -35,19 +35,16 @@ function runInWorker(scriptPath, args = [], input = "") {
 		let output = "";
 		let errorOutput = "";
 
-		// 1. 入力文字列がある場合、Workerのstdinに書き込む
 		if (input) {
 			worker.stdin.write(input);
-			worker.stdin.end(); // 入力の終わりを伝える（重要）
+			worker.stdin.end();
 		}
 
 		worker.stdout.on("data", (chunk) => {
-			// console.log(chunk.toString());
 			output += chunk.toString();
 		});
 
 		worker.stderr.on("data", (chunk) => {
-			// console.log(chunk.toString());
 			errorOutput += chunk.toString();
 		});
 

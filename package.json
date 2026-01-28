@@ -1,6 +1,6 @@
 {
 	"name": "@kokiito0926/cli-to-module",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"private": false,
 	"description": "CLI to Moduleを用いると、CLIをモジュール化することができます。",
 	"keywords": [

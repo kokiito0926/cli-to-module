@@ -5,6 +5,7 @@
 	"description": "CLI to Moduleを用いると、CLIをモジュール化することができます。",
 	"keywords": [
 		"cli",
+		"ctm",
 		"module",
 		"nodejs",
 		"cli-to-module"

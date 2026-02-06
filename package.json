@@ -2,7 +2,7 @@
 	"name": "@kokiito0926/cli-to-module",
 	"version": "0.0.3",
 	"private": false,
-	"description": "CLI to Moduleを用いると、CLIをモジュール化することができます。",
+	"description": "CLIのツールをワーカースレッドで実行することができるライブラリです。",
 	"keywords": [
 		"cli",
 		"ctm",

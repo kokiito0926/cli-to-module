@@ -1,7 +1,8 @@
-## CLI to Module
+## cli-to-module
 
-CLI to Moduleを用いると、CLIをモジュール化することができます。  
-ワーカースレッドを内部で使用しているため、プロセスが終了するようなことはありません。
+cli-to-moduleは、CLIのツールをワーカースレッドで実行することができるライブラリです。  
+通常、CLIのツールをimportして実行すると、内部でprocess.exitが呼び出されたときに、呼び出し元のプログラムも終了してしまいます。  
+このライブラリはワーカースレッドを使用することで、プロセスを終了させることなく、CLIのツールを実行することができます。
 
 ## インストール
 
@@ -9,16 +10,28 @@ CLI to Moduleを用いると、CLIをモジュール化することができま�
 $ npm install @kokiito0926/cli-to-module
 ```
 
-## コード
+## 使用方法
+
+CLIのツールを指定して、コマンドライン引数を配列で渡します。
 
 ```javascript
 import { ctm } from "@kokiito0926/cli-to-module";
 
 const result = await ctm("zx/cli", ["--help"]);
-console.log(result);
+console.log(result.code);
+console.log(result.stdout);
+console.log(result.stderr);
+```
 
-const result2 = await ctm("zx/cli", [], 'console.log("Hello, world!")');
-console.log(result2);
+第3引数に文字列を渡すことで、CLIのツールの標準入力として扱われます。
+
+```javascript
+import { ctm } from "@kokiito0926/cli-to-module";
+
+const result = await ctm("zx/cli", [], 'console.log("Hello, world!")');
+console.log(result.code);
+console.log(result.stdout);
+console.log(result.stderr);
 ```
 
 ## ライセンス

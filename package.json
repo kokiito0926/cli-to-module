@@ -1,5 +1,5 @@
 {
-	"name": "@kokiito0926/cli-to-module",
+	"name": "@kokiito0926/cli2module",
 	"version": "0.0.4",
 	"private": false,
 	"description": "CLIのツールをワーカースレッドで実行することができるライブラリです。",
@@ -8,19 +8,19 @@
 		"ctm",
 		"module",
 		"nodejs",
-		"cli-to-module"
+		"cli2module"
 	],
-	"homepage": "https://github.com/kokiito0926/cli-to-module#readme",
+	"homepage": "https://github.com/kokiito0926/cli2module#readme",
 	"publishConfig": {
 		"access": "public"
 	},
 	"main": "./index.js",
 	"bugs": {
-		"url": "https://github.com/kokiito0926/cli-to-module/issues"
+		"url": "https://github.com/kokiito0926/cli2module/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/kokiito0926/cli-to-module.git"
+		"url": "git+https://github.com/kokiito0926/cli2module.git"
 	},
 	"license": "MIT",
 	"author": "Koki Ito <kokiito0926@gmail.com>",

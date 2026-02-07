@@ -5,7 +5,6 @@
 	"description": "CLIのツールをワーカースレッドで実行することができるライブラリです。",
 	"keywords": [
 		"cli",
-		"ctm",
 		"module",
 		"nodejs",
 		"cli2module"
